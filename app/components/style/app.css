@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style-type: none;
+}
+.appContainer {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.routerContainer {
+
+}
+.appContainer .nav .activeNavTab {
+	font-weight: bold;
+	color: #000;
+}
+.nav a {
+	color: #ccc;
+	text-decoration:none;
+    padding: 20px;
+}
