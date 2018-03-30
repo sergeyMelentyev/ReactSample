@@ -1,0 +1,31 @@
+.navigationBar {
+	display: flex;
+	justify-content: center;
+}
+.navigationBar li {
+	padding: 10px;
+}
+.reposContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.reposContainer li {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.popularRank {
+    font-size: 20px;
+    font-weight: bold;
+}
+.avatar {
+    max-height: 200px;
+}
