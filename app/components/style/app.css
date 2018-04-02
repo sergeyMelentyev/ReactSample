@@ -16,6 +16,9 @@ li {
 .routerContainer {
 
 }
+.nav {
+    display: flex;
+}
 .appContainer .nav .activeNavTab {
 	font-weight: bold;
 	color: #000;
@@ -24,4 +27,9 @@ li {
 	color: #ccc;
 	text-decoration:none;
     padding: 20px;
+}
+
+.repoInputContainer {
+	display: flex;
+	justify-content: space-between;
 }

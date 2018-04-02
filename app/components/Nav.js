@@ -1,5 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+require("./style/app.css");
 
 function Nav() {
 	return (
@@ -8,6 +9,8 @@ function Nav() {
 				<NavLink activeClassName="activeNavTab" exact to="/">
 					Compare
 				</NavLink>
+			</li>
+			<li>
 				<NavLink activeClassName="activeNavTab" to="/popular">
 					Popular
 				</NavLink>
