@@ -33,3 +33,10 @@ li {
 	display: flex;
 	justify-content: space-between;
 }
+.repoInput {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 45%;
+}
