@@ -1,6 +1,7 @@
 import React from "react";
 import RepoInput from "./RepoInput.js";
 import RepoPreview from "./RepoPreview.js";
+import {Link} from "react-router-dom";
 
 export default class Compare extends React.Component {
 	constructor(props) {
@@ -40,20 +41,25 @@ export default class Compare extends React.Component {
 		var secondRepoName = this.state.secondRepoName;
 		var secondRepoImage = this.state.secondRepoImage;
 		return (
-			<div className="compare__user-input-container">
+			<div className="compare__user-input-and-results-container">
+				<div className="compare__user-input-container">
+					{
+						firstRepoName ? (
+							<RepoPreview id="firstRepo" name={firstRepoName} image={firstRepoImage} onReset={this.handleReset} />
+						) : (
+							<RepoInput id="firstRepo" label="First Repository" onSubmit={this.handleSubmit} />
+						)
+					}
+					{
+						secondRepoName ? (
+							<RepoPreview id="secondRepo" name={secondRepoName} image={secondRepoImage} onReset={this.handleReset} />
+						) : (
+							<RepoInput id="secondRepo" label="Second Repository" onSubmit={this.handleSubmit} />
+						)
+					}
+				</div>
 				{
-					firstRepoName ? (
-						<RepoPreview id="firstRepo" name={firstRepoName} image={firstRepoImage} onReset={this.handleReset} />
-					) : (
-						<RepoInput id="firstRepo" label="First Repository" onSubmit={this.handleSubmit} />
-					)
-				}
-				{
-					secondRepoName ? (
-						<RepoPreview id="secondRepo" name={secondRepoName} image={secondRepoImage} onReset={this.handleReset} />
-					) : (
-						<RepoInput id="secondRepo" label="Second Repository" onSubmit={this.handleSubmit} />
-					)
+					firstRepoImage && secondRepoImage && <Link to="/" className="compare__show-final-results">Show results</Link>
 				}
 			</div>
 		);

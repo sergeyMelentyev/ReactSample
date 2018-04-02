@@ -29,6 +29,7 @@ li {
 .compare__user-input-container {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 50px;
 }
 .compare__form-container {
 display: flex;
@@ -48,6 +49,7 @@ display: flex;
 }
 .compare__form-input {
 	border: 1px solid #ccc;
+	width: 200px;
 }
 .compare__form-submit {
 	border: 1px solid #ccc;
@@ -68,4 +70,9 @@ display: flex;
 .repo-preview__external-container button {
 	border: 1px solid #ccc;
 	border-radius: 5px;
+}
+.compare__user-input-and-results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
