@@ -5,13 +5,13 @@ import Compare from "./compare/Compare.js";
 import Popular from "./popular/Popular.js";
 require("./style/app.css");
 
-class App extends React.Component {
+export default class App extends React.Component {
 	render() {
 		return (
 			<BrowserRouter>
-				<div className="appContainer">
+				<div className="app__main-container">
 					<Nav />
-					<div className="routerContainer">
+					<div>
 						<Switch>
 							<Route exact path="/" component={Compare} />
 			                <Route path="/popular" component={Popular} />
@@ -22,6 +22,4 @@ class App extends React.Component {
 			</BrowserRouter>
 		);
 	}
-}
-
-export default App;
+};

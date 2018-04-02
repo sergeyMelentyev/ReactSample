@@ -18,12 +18,12 @@ export default class RepoInput extends React.Component {
 	}
 	render() {
 		return (
-			<form onSubmit={this.handleSubmit} className="repoInput">
+			<form onSubmit={this.handleSubmit} className="compare__form-container">
 				<label>{this.props.label}
 					<input value={this.state.name} onChange={this.handleChange}
-						   type="text" placeholder="github username" autoComplete="off" />
+						   type="text" placeholder="github username" autoComplete="off" className="compare__form-input" />
 				</label>
-				<input type="submit" value="Submit" disabled={!this.state.name} />
+				<input type="submit" value="Submit" disabled={!this.state.name} className="compare__form-submit" />
 			</form>
 		);
 	}

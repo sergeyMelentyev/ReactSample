@@ -7,19 +7,16 @@ ul {
 li {
 	list-style-type: none;
 }
-.appContainer {
+.app__main-container {
 	display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.routerContainer {
-
-}
 .nav {
     display: flex;
 }
-.appContainer .nav .activeNavTab {
+.app__main-container .nav .activeNavTab {
 	font-weight: bold;
 	color: #000;
 }
@@ -29,14 +26,46 @@ li {
     padding: 20px;
 }
 
-.repoInputContainer {
+.compare__user-input-container {
 	display: flex;
 	justify-content: space-between;
 }
-.repoInput {
+.compare__form-container {
+display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 250px;
+}
+.compare__form-container label {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	flex-basis: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55%;
+    font-size: 24px;
+}
+.compare__form-input {
+	border: 1px solid #ccc;
+}
+.compare__form-submit {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.repo-preview__external-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.repo-preview__external-container img {
+	height: 220px;
+	border-radius: 120px;
+    padding: 10px;
+}
+.repo-preview__external-container button {
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
