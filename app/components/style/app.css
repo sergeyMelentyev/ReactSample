@@ -76,3 +76,10 @@ display: flex;
     flex-direction: column;
     align-items: center;
 }
+.compare__show-final-results {
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}

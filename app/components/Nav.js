@@ -7,6 +7,11 @@ function Nav() {
 		<ul className="nav">
 			<li>
 				<NavLink activeClassName="activeNavTab" exact to="/">
+					Home
+				</NavLink>
+			</li>
+			<li>
+				<NavLink activeClassName="activeNavTab" exact to="/compare">
 					Compare
 				</NavLink>
 			</li>

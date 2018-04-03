@@ -36,6 +36,7 @@ export default class Compare extends React.Component {
 		});
 	}
 	render() {
+		var match = this.props.match;
 		var firstRepoName = this.state.firstRepoName;
 		var firstRepoImage = this.state.firstRepoImage;
 		var secondRepoName = this.state.secondRepoName;
@@ -59,7 +60,9 @@ export default class Compare extends React.Component {
 					}
 				</div>
 				{
-					firstRepoImage && secondRepoImage && <Link to="/" className="compare__show-final-results">Show results</Link>
+					firstRepoImage && secondRepoImage && <Link to={{pathname: `${match.url}/results`,
+																	search: `?firstRepoName=${firstRepoName}&secondRepoName=${secondRepoName}`}}
+															   className="compare__show-final-results">Show results</Link>
 				}
 			</div>
 		);
