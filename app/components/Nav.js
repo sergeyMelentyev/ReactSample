@@ -11,7 +11,7 @@ function Nav() {
 				</NavLink>
 			</li>
 			<li>
-				<NavLink activeClassName="activeNavTab" exact to="/compare">
+				<NavLink activeClassName="activeNavTab" to="/compare">
 					Compare
 				</NavLink>
 			</li>
