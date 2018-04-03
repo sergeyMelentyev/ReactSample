@@ -83,3 +83,24 @@ display: flex;
     text-decoration: none;
     color: #000;
 }
+.results__compare-two-repos-container {
+	display: flex;
+}
+.results__compare-two-repos-container ul {
+    display: flex;
+}
+.results__compare-two-repos-item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.results__compare-two-repos-item img {
+    width: 100px;
+    border-radius: 50px;
+}

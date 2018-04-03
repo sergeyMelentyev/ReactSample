@@ -1,11 +1,14 @@
 import axios from "axios";
+var id = "3adebb9cd98b82446d5e";
+var secret = "97a2b28de201e667db1522d7e7f44103674ddf55";
+var params = `?client_id=${id}&client_secret=${secret}`;
 
 function getProfile(userName) {
-	var encodedURI = window.encodeURI(`https://api.github.com/users/${userName}`);
+	var encodedURI = window.encodeURI(`https://api.github.com/users/${userName}${params}`);
 	return axios.get(encodedURI).then(response => response.data);
 }
 function getRepos(userName) {
-	var encodedURI = window.encodeURI(`https://api.github.com/users/${userName}/repos?per_page=100`);
+	var encodedURI = window.encodeURI(`https://api.github.com/users/${userName}/repos${params}&per_page=100`);
 	return axios.get(encodedURI);
 }
 function getStarCount(repos) {
