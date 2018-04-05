@@ -1,5 +1,5 @@
 import React from "react";
-import Api from "../../utils/Api.js";
+import Api from "../../utils/Api";
 import queryString from "query-string";
 
 export default class Results extends React.Component {

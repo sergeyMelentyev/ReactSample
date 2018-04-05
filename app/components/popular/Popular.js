@@ -1,6 +1,6 @@
 import React from "react";
-import Api from "../../utils/Api.js";
-require("../style/header.css");
+import Api from "../../utils/Api";
+import "../style/header.css";
 
 function CurrentTab(props) {
 	const navigationItems = new Array("All", "Javascript");

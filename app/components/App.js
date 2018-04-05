@@ -1,11 +1,11 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Nav from "./Nav.js";
-import Home from "./Home.js";
-import Compare from "./compare/Compare.js";
-import Results from "./compare/Results.js";
-import Popular from "./popular/Popular.js";
-require("./style/app.css");
+import Nav from "./Nav";
+import Home from "./Home";
+import Compare from "./compare/Compare";
+import Results from "./compare/Results";
+import Popular from "./popular/Popular";
+import "./style/app.css";
 
 export default class App extends React.Component {
 	render() {

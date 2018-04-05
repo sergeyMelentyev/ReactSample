@@ -1,6 +1,6 @@
 import React from "react";
-import RepoInput from "./RepoInput.js";
-import RepoPreview from "./RepoPreview.js";
+import RepoInput from "./RepoInput";
+import RepoPreview from "./RepoPreview";
 import {Link} from "react-router-dom";
 
 export default class Compare extends React.Component {
