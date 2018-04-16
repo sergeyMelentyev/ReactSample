@@ -104,3 +104,8 @@ display: flex;
     width: 100px;
     border-radius: 50px;
 }
+
+.home__main-container {
+    padding: 0 100px;
+    text-align: center;
+}
